@@ -1,0 +1,93 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fa;
+  margin: 0;
+  padding: 0;
+  color: #1e293b;
+}
+header {
+  background: linear-gradient(90deg, #3b82f6, #2563eb);
+  color: white;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+nav {
+  background-color: #1e3a8a;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+nav a {
+  color: #ffffff;
+  margin: 0 18px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: #93c5fd;
+}
+main {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+h1, h2 {
+  color: #1e3a8a;
+  margin-top: 0;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+ul li {
+  margin: 10px 0;
+  padding-left: 10px;
+  position: relative;
+}
+ul li::before {
+  content: "\2022";
+  color: #2563eb;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+a.button, button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 15px;
+  transition: background 0.3s ease;
+}
+a.button:hover, button:hover {
+  background-color: #1d4ed8;
+  cursor: pointer;
+}
+input[type="file"] {
+  margin-top: 15px;
+  padding: 8px;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 400px;
+}
