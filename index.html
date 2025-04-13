@@ -1,54 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Services - Feature Pages</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Services - Landing Page</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      text-align: center;
+    }
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+    .card h2 {
+      color: #1e3a8a;
+    }
+    .card p {
+      color: #333;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: #3b82f6;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      transition: background-color 0.2s;
+    }
+    .card a:hover {
+      background-color: #2563eb;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to AI Analytics Services</h1>
+    <h1>Unlock the Power of AI for Your Business</h1>
+    <p>Data analytics made easy for everyone — B2B or B2C</p>
   </header>
-  <nav>
-    <a href="upload.html">Upload</a>
-    <a href="templates.html">Templates</a>
-    <a href="dashboards.html">Dashboards</a>
-    <a href="models.html">Models</a>
-    <a href="consultation.html">Consultation</a>
-    <a href="pricing.html">Pricing</a>
-  </nav>
-  <main>
-    <section class="card">
+  <section class="features">
+    <div class="card">
       <h2>Easy Data Upload</h2>
-      <p>Upload your data in CSV, Excel, JSON, or integrate via our API.</p>
-      <a class="button" href="upload.html">Go to Upload</a>
-    </section>
-    <section class="card">
-      <h2>Industry-Specific Templates</h2>
-      <p>Choose from pre-built analytics templates designed for your industry.</p>
-      <a class="button" href="templates.html">Explore Templates</a>
-    </section>
-    <section class="card">
-      <h2>Dynamic Dashboards & Reports</h2>
-      <p>Real-time dashboards and downloadable PDF insights.</p>
-      <a class="button" href="dashboards.html">View Dashboards</a>
-    </section>
-    <section class="card">
+      <p>Upload CSV, Excel, JSON, or connect via API for instant data processing.</p>
+      <a href="easy-data-upload.html">Explore</a>
+    </div>
+    <div class="card">
+      <h2>Pre-built Industry Templates</h2>
+      <p>Choose from templates tailored to retail, finance, healthcare, and more.</p>
+      <a href="industry-templates.html">Explore</a>
+    </div>
+    <div class="card">
+      <h2>Interactive Dashboards & Reports</h2>
+      <p>Generate dynamic dashboards or downloadable PDF reports automatically.</p>
+      <a href="dashboards-reports.html">Explore</a>
+    </div>
+    <div class="card">
       <h2>AI Model Recommendations</h2>
-      <p>Get AI model suggestions based on your data type and goals.</p>
-      <a class="button" href="models.html">See Recommendations</a>
-    </section>
-    <section class="card">
-      <h2>Talk to an AI Expert</h2>
-      <p>1-on-1 consultations to customize AI solutions for your business.</p>
-      <a class="button" href="consultation.html">Book Consultation</a>
-    </section>
-    <section class="card">
-      <h2>Pricing Plans</h2>
-      <p>Flexible pricing to fit businesses of all sizes.</p>
-      <a class="button" href="pricing.html">View Pricing</a>
-    </section>
-  </main>
+      <p>We recommend the best-fit AI models based on your data structure.</p>
+      <a href="model-recommendations.html">Explore</a>
+    </div>
+    <div class="card">
+      <h2>Custom AI Consultation</h2>
+      <p>Talk directly with our experts to solve your unique business challenges.</p>
+      <a href="consultation.html">Explore</a>
+    </div>
+    <div class="card">
+      <h2>Flexible Pricing</h2>
+      <p>Choose Free Trial, Pay-per-analysis, or Monthly Subscription.</p>
+      <a href="pricing.html">Explore</a>
+    </div>
+  </section>
 </body>
 </html>
